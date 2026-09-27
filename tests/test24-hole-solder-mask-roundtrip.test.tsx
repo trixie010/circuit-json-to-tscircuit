@@ -3,7 +3,7 @@ import type { AnyCircuitElement, PcbHole } from "circuit-json"
 import { convertCircuitJsonToTscircuit } from "lib"
 import { runTscircuitCode } from "tscircuit"
 
-test.failing("test24 support hole solder mask - round trip", async () => {
+test("test24 support hole solder mask - round trip", async () => {
   const tscircuit = convertCircuitJsonToTscircuit(circuitJson, {
     componentName: "Test24Component",
   })

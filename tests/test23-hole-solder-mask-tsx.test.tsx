@@ -1,7 +1,7 @@
 import { expect, test } from "bun:test"
 import { convertCircuitJsonToTscircuit } from "lib"
 
-test.failing("test23 support hole solder mask - TSX props", async () => {
+test("test23 support hole solder mask - TSX props", async () => {
   const tscircuit = convertCircuitJsonToTscircuit(circuitJson, {
     componentName: "Test23Component",
   })
